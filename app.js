@@ -56,7 +56,7 @@ function proceed(current,next){
 function restart(){
 	console.log("in restart");
 	$("section").hide();
-	$("section#start").find("h1").html("you got "+correct+"/10 right answers!");
+	$("section#start").find("h1").html("you got "+correct+"/6 right answers!");
 	$("section#start").find(".start").removeClass("start").addClass("replay").html("Play again?").on("click", function(e){
 		console.log("clicked replay");
 		location.reload();
